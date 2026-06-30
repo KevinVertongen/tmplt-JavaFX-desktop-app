@@ -1,0 +1,7 @@
+spring:
+  datasource:
+    url: jdbc:h2:file:../db/template
+    driver-class-name: org.h2.Driver
+logging:
+  file:
+    name: ../logs/template.log
