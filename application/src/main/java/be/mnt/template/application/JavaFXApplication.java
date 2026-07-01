@@ -31,7 +31,7 @@ public class JavaFXApplication extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception {
-        this.templateStage = new TemplateStage(primaryStage);
-        this.templateStage.show();
+        this.templateStage = applicationContext.getBean(TemplateStage.class);
+        this.templateStage.show(primaryStage);
     }
 }
